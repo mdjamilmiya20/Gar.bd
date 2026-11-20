@@ -1,0 +1,133 @@
+DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>Rider Management</title>
+<style>
+body { font-family: Arial, sans-serif; display: flex; margin: 0; }
+.sidebar { width: 200px; background: #333; color: white; height: 100vh; padding: 20px; }
+.main-content { flex: 1; padding: 20px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+th { background: #f4f4f4; }
+</style>
+</head>
+<body>
+<div class="sidebar">
+<h2>Admin Panel</h2>
+<p><a href="dashboard.html" style="color: white;">Dashboard</a></p>
+<p><a href="riders.html" style="color: white;">Riders</a></p>
+<p><a href="drivers.html" style="color: white;">Drivers</a></p>
+</div>
+<div class="main-content">
+<h1>Rider Management</h1>
+<table>
+<tr>
+<th>Rider ID</th>
+<th>Name</th>
+<th>Phone</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>R001</td>
+<td>Rahim</td>
+<td>01700000000</td>
+<td>Active</td>
+</tr>
+</table>
+</div>
+</body>
+</html><!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Driver Management</title>
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; margin: 0; }
+    .sidebar { width: 200px; background: #333; color: white; height: 100vh; padding: 20px; }
+    .sidebar a { display: block; color: white; text-decoration: none; margin: 10px 0; }
+    .main-content { flex: 1; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background: #f4f4f4; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <p><a href="dashboard.html">Dashboard</a></p>
+    <p><a href="riders.html">Riders</a></p>
+    <p><a href="drivers.html">Drivers</a></p>
+  </div>
+  <div class="main-content">
+    <h1>Driver Management</h1>
+    <table>
+      <tr>
+        <th>Driver ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Vehicle</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>D001</td>
+        <td>Karim</td>
+        <td>01800000000</td>
+        <td>Toyota Axio</td>
+        <td>Active</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 30px; }
+        .box { background: white; padding: 30px; width: 300px; margin: 0 auto; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; margin-top: 0; }
+        input { width: 100%; padding: 10px; margin-bottom: 20px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Admin Panel</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+    <script>
+        function login() {
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; margin: 0; }
+        .sidebar { width: 200px; background: #333; color: white; height: 100vh; padding: 20px; }
+        .main-content { flex: 1; padding: 20px; }
+    </style>
+</head>
+<body>
+        .card { background: #f4f4f4; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <p>Dashboard</p>
+<a href="riders.html" style="color: white;">Riders</a>                <p>Drivers</p>
+<p><a href="drivers.html" style="color: white;">Drivers</a></p>    </div>
+    <div class="main-content">
+        <h1>Dashboard</h1>
+        <div class="card">Total Rides: 150</div>
+        <div class="card">Active Drivers: 40</div>
+    </div>
+</body>
+</html
